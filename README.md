@@ -1,5 +1,6 @@
 # software_installer
-Software installer
+<p>Software installer</p>
+<p>Installer un logiciel ou un jeu, depuis un ficheir ZIP sur serveur (http).</p>
 
 Pré-requis:
 
