@@ -1,3 +1,7 @@
 # software_installer
 Software installer
-je l'ajoute dnas 5 minutes reste ici :)
+
+Pré-requis:
+- pip install pywin32
+- pip install tkinter
+- pip install customtkinter
