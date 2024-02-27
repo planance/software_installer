@@ -10,11 +10,11 @@ from tkinter import filedialog
 from tkinter import ttk
 import customtkinter
 
-dev_name = "RampageVisionLab"
-software_name = "DeathRoulette"
+dev_name = "NOM_DU_DEV"
+software_name = "NOM_DU_LOGICIEL"
 program_files_path = os.environ.get("PROGRAMFILES")
 dossier_cible = os.path.join(program_files_path, dev_name, software_name)
-url_zip = "https://cloud.jimmyleroy.fr/admin/ALLOO.zip"
+url_zip = "URL DE VOTRE FICHIER .ZIP AVEC LE FICHIER .EXE DEDANS"
 
 def telecharger_fichier(url, destination):
     response = requests.get(url)
