@@ -10,11 +10,11 @@ from tkinter import filedialog
 from tkinter import ttk
 import customtkinter
 
-dev_name = "NOM_DU_DEV"
-software_name = "NOM_DU_LOGICIEL"
+dev_name = "NOM_DU_DEV" # Modifier le nom du développeur.
+software_name = "NOM_DU_LOGICIEL" # Modifier le nom du logiciel ou du jeu.
 program_files_path = os.environ.get("PROGRAMFILES")
 dossier_cible = os.path.join(program_files_path, dev_name, software_name)
-url_zip = "URL DE VOTRE FICHIER .ZIP AVEC LE FICHIER .EXE DEDANS"
+url_zip = "URL DE VOTRE FICHIER .ZIP AVEC LE FICHIER .EXE DEDANS" # Lien de votre fichier .zip, vous pouvez le mettre sur votre serveur sur un hebergeur privé par exemple.
 
 def telecharger_fichier(url, destination):
     response = requests.get(url)
@@ -56,7 +56,7 @@ def trouver_fichier_exe(destination):
     return None
 
 def lancer_installation(destination):
-    destination_zip = "t_e_m_p.zip"
+    destination_zip = "t_e_m_p.zip" # Peut importe comment il s'appel, il sera supprimé, il est temporaire, je l'appel ainsi pour éviter des confusions potentielles.
     telecharger_fichier(url_zip, destination_zip)
 
     extraire_zip(destination_zip, destination)
